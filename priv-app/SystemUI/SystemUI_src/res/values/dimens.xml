@@ -1265,6 +1265,8 @@
     <dimen name="player_z">18.0dip</dimen>
     <dimen name="player_z_boost">20.0dip</dimen>
     <dimen name="hud_z">35.0dip</dimen>
+    <dimen name="net_traffic_single_text_size">12.0dip</dimen>
+    <dimen name="net_traffic_multi_text_size">9.0dip</dimen>
     <item type="dimen" name="APKTOOL_DUMMY_29e">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_29f">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_2a0">false</item>
