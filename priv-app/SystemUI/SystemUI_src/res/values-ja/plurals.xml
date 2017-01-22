@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">正しくないPINが入力されました。残りの試行回数は%d回です。</item>
+        <item quantity="one">入力したPINが正しくありません。正しくないPINをあと%d回入力すると、端末のロックを解除するためにサービスプロバイダへの問い合わせが必要になります。</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">正しくないPUKが入力されました。正しくないPUKをあと%d回入力すると、SIMカードは完全にロックされます。</item>
+        <item quantity="one">入力したPUKが正しくありません。正しくないPUKをあと%d回入力すると、SIMカードは完全にロックされます。</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d件の最近利用したアプリ</item>
+        <item quantity="one">1件の最近利用したアプリ</item>
+    </plurals>
+</resources>

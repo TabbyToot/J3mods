@@ -1,0 +1,10 @@
+/priv-app/J3RomControl/*.iml
+/priv-app/J3RomControl/.gradle
+/priv-app/J3RomControl/local.properties
+/priv-app/J3RomControl/.idea/workspace.xml
+/priv-app/J3RomControl/.idea/libraries
+/priv-app/J3RomControl/.DS_Store
+/priv-app/J3RomControl/build
+/priv-app/J3RomControl/captures
+/priv-app/SystemUI/*.apk
+/priv-app/SystemUI/SystemUI_src/build

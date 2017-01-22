@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="status_bar_recent_remove_all_button_size">18.0dip</dimen>
+    <item type="dimen" name="recents_multiwin_text_shadow_distance">1.0</item>
+    <dimen name="recents_empty_text_size">23.0dip</dimen>
+</resources>

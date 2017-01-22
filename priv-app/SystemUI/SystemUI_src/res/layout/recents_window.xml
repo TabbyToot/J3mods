@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/recents_window_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/recents_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.android.systemui.recents.views.RecentsView android:id="@id/recents_view" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:background="@color/recents_window_divider_background_bright" android:layout_width="@dimen/recents_window_divider_width" android:layout_height="@dimen/recents_window_divider_height" android:layout_weight="0.0" />
+        <LinearLayout android:layout_gravity="center_vertical" android:background="@color/recents_window_divider_background_dark" android:layout_width="@dimen/recents_window_divider_width" android:layout_height="@dimen/recents_window_divider_height" android:layout_weight="0.0" />
+        <LinearLayout android:layout_width="@dimen/recents_window_close_all_width" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/status_bar_recent_remove_all_button_size" android:textColor="@color/recents_remove_all_button_text_color" android:id="@id/clear_all_button" android:background="@drawable/recents_window_close_button_bg" android:paddingLeft="@dimen/recents_window_closs_all_paddingRight" android:paddingTop="@dimen/recents_window_closs_all_paddingTop" android:paddingRight="@dimen/recents_window_closs_all_paddingRight" android:paddingBottom="@dimen/recents_window_closs_all_paddingTop" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/status_bar_recent_remove_all_button" android:maxLines="2" android:drawableTop="@drawable/APKTOOL_DUMMY_22c" android:drawablePadding="@dimen/recents_window_closs_all_drawable_padding" android:fontFamily="sans-serif" />
+        </LinearLayout>
+    </LinearLayout>
+    <ViewStub android:id="@id/empty_view_stub" android:layout="@layout/recents_empty" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

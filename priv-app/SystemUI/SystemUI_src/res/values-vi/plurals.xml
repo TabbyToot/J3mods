@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="other">Đã nhập sai mã PIN. Bạn còn %d lần thử.</item>
+        <item quantity="one">Đã nhập sai mã PIN. Nếu nhập sai mã PIN %d lần nữa, bạn sẽ phải liên hệ nhà cung cấp dịch vụ để mở khóa thiết bị.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="other">Đã nhập sai mã PUK. Nếu nhập sai mã PUK %d lần nữa, thẻ SIM sẽ bị khóa vĩnh viễn.</item>
+        <item quantity="one">Đã nhập sai mã PUK. Nếu nhập sai mã PUK %d lần nữa, thẻ SIM sẽ bị khóa vĩnh viễn.</item>
+    </plurals>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d ứng dụng gần đây</item>
+        <item quantity="one">1 ứng dụng gần đây</item>
+    </plurals>
+</resources>
