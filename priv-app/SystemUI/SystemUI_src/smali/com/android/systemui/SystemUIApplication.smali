@@ -8,6 +8,8 @@
 
 .field private static final TAG:Ljava/lang/String; = "SystemUIService"
 
+.field private static mGearContext:Landroid/content/Context;
+
 
 # instance fields
 .field private final SERVICES:[Ljava/lang/Class;
@@ -177,6 +179,13 @@
     return-object v0
 .end method
 
+.method public static getContext()Landroid/content/Context;
+    .locals 1
+
+    sget-object v0, Lcom/android/systemui/SystemUIApplication;->mGearContext:Landroid/content/Context;
+
+    return-object v0
+.end method
 
 # virtual methods
 .method public getComponent(Ljava/lang/Class;)Ljava/lang/Object;
@@ -318,6 +327,8 @@
     const v1, 0x7f110040
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/SystemUIApplication;->setTheme(I)V
+    
+    sput-object p0, Lcom/android/systemui/SystemUIApplication;->mGearContext:Landroid/content/Context;
 
     .line 84
     new-instance v0, Landroid/content/IntentFilter;
