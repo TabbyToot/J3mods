@@ -670,6 +670,10 @@
     <dimen name="zzz_keyguard_screen_usimwidget_margin_bottom">25.0dip</dimen>
     <dimen name="keyguard_one_hand_pattern_margin">50.0dip</dimen>
     <dimen name="keyguard_one_hand_pin_margin">24.0dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_29e">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_29f">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_2a0">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_2a1">false</item>
     <dimen name="status_bar_edge_ignore">5.0dip</dimen>
     <dimen name="status_bar_recents_app_icon_max_width">48.0dip</dimen>
     <dimen name="status_bar_recents_app_icon_max_height">48.0dip</dimen>
@@ -1238,6 +1242,7 @@
     <dimen name="status_bar_contents_padding_end">8.0dip</dimen>
     <dimen name="app_locked_text_size">20.0dip</dimen>
     <dimen name="app_locked_text_top_padding">4.0dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_4dc">false</item>
     <item type="dimen" name="status_bar_height">@android:dimen/status_bar_height</item>
     <item type="dimen" name="navigation_bar_height">@android:dimen/navigation_bar_height</item>
     <dimen name="obstacle_spacing">380.0dip</dimen>
@@ -1265,15 +1270,10 @@
     <dimen name="player_z">18.0dip</dimen>
     <dimen name="player_z_boost">20.0dip</dimen>
     <dimen name="hud_z">35.0dip</dimen>
-    <dimen name="net_traffic_single_text_size">12.0dip</dimen>
-    <dimen name="net_traffic_multi_text_size">9.0dip</dimen>
-    <item type="dimen" name="APKTOOL_DUMMY_29e">false</item>
-    <item type="dimen" name="APKTOOL_DUMMY_29f">false</item>
-    <item type="dimen" name="APKTOOL_DUMMY_2a0">false</item>
-    <item type="dimen" name="APKTOOL_DUMMY_2a1">false</item>
-    <item type="dimen" name="APKTOOL_DUMMY_4dc">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_4f8">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_4f9">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_4fa">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_4fb">false</item>
+    <dimen name="net_traffic_single_text_size">12.0dip</dimen>
+    <dimen name="net_traffic_multi_text_size">9.0dip</dimen>
 </resources>

@@ -1574,16 +1574,16 @@ To unblock notifications from this app later, go to Settings > Sounds and notifi
     <string name="accessibility_desc_floating_hide">Hide</string>
     <string name="app_locked">App locked</string>
     <string name="applocked_pinning_window_disable">Unable to pin app. App locked.</string>
-	<string name="charging_interruption_by_too_high_flash_temperature_text"></string>
-	<string name="data_usage_disable_mobile_vzw_3"></string>
-	<string name="popup_negative_button_label"></string>
-	<string name="switched_to_onephone_mode"></string>
-	<string name="switched_to_twophone_mode"></string>
+    <string name="data_usage_disable_mobile_vzw_3" />
+    <string name="switched_to_onephone_mode" />
+    <string name="switched_to_twophone_mode" />
     <item type="string" name="APKTOOL_DUMMY_572">false</item>
     <item type="string" name="APKTOOL_DUMMY_573">false</item>
+    <string name="charging_interruption_by_too_high_flash_temperature_text" />
     <item type="string" name="APKTOOL_DUMMY_575">false</item>
     <item type="string" name="APKTOOL_DUMMY_576">false</item>
     <item type="string" name="APKTOOL_DUMMY_577">false</item>
     <item type="string" name="APKTOOL_DUMMY_578">false</item>
     <item type="string" name="APKTOOL_DUMMY_579">false</item>
+    <string name="popup_negative_button_label" />
 </resources>

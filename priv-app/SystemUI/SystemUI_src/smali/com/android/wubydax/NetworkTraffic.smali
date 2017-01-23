@@ -101,7 +101,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .registers 2
+    .locals 2
 
     .prologue
     .line 47
@@ -197,7 +197,7 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .registers 8
+    .locals 5
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
@@ -327,7 +327,7 @@
 .end method
 
 .method static synthetic access$000(Lcom/android/wubydax/NetworkTraffic;)J
-    .registers 3
+    .locals 2
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -338,7 +338,7 @@
 .end method
 
 .method static synthetic access$002(Lcom/android/wubydax/NetworkTraffic;J)J
-    .registers 4
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
     .param p1, "x1"    # J
 
@@ -350,7 +350,7 @@
 .end method
 
 .method static synthetic access$100(Lcom/android/wubydax/NetworkTraffic;)I
-    .registers 2
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -361,7 +361,7 @@
 .end method
 
 .method static synthetic access$1000(Lcom/android/wubydax/NetworkTraffic;)I
-    .registers 2
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -372,7 +372,7 @@
 .end method
 
 .method static synthetic access$1100(Lcom/android/wubydax/NetworkTraffic;)I
-    .registers 2
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -383,7 +383,7 @@
 .end method
 
 .method static synthetic access$1200(Lcom/android/wubydax/NetworkTraffic;)I
-    .registers 2
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -394,7 +394,7 @@
 .end method
 
 .method static synthetic access$1300(Lcom/android/wubydax/NetworkTraffic;)Ljava/lang/Runnable;
-    .registers 2
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -405,7 +405,7 @@
 .end method
 
 .method static synthetic access$1400(Lcom/android/wubydax/NetworkTraffic;)Landroid/os/Handler;
-    .registers 2
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -416,7 +416,7 @@
 .end method
 
 .method static synthetic access$1500()Ljava/text/DecimalFormat;
-    .registers 1
+    .locals 1
 
     .prologue
     .line 42
@@ -426,7 +426,7 @@
 .end method
 
 .method static synthetic access$1600(Lcom/android/wubydax/NetworkTraffic;)I
-    .registers 2
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -437,7 +437,7 @@
 .end method
 
 .method static synthetic access$1700(Lcom/android/wubydax/NetworkTraffic;)I
-    .registers 2
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -448,7 +448,7 @@
 .end method
 
 .method static synthetic access$1800(Lcom/android/wubydax/NetworkTraffic;)Z
-    .registers 2
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -459,7 +459,7 @@
 .end method
 
 .method static synthetic access$1900(Lcom/android/wubydax/NetworkTraffic;)I
-    .registers 2
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -470,7 +470,7 @@
 .end method
 
 .method static synthetic access$200(I)I
-    .registers 2
+    .locals 1
     .param p0, "x0"    # I
 
     .prologue
@@ -483,7 +483,7 @@
 .end method
 
 .method static synthetic access$2000(Lcom/android/wubydax/NetworkTraffic;)V
-    .registers 1
+    .locals 0
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -494,7 +494,7 @@
 .end method
 
 .method static synthetic access$2100(Lcom/android/wubydax/NetworkTraffic;)Landroid/content/Context;
-    .registers 2
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -505,7 +505,7 @@
 .end method
 
 .method static synthetic access$2200()Ljava/lang/String;
-    .registers 1
+    .locals 1
 
     .prologue
     .line 42
@@ -515,7 +515,7 @@
 .end method
 
 .method static synthetic access$2300()Ljava/lang/String;
-    .registers 1
+    .locals 1
 
     .prologue
     .line 42
@@ -525,7 +525,7 @@
 .end method
 
 .method static synthetic access$2400()Ljava/lang/String;
-    .registers 1
+    .locals 1
 
     .prologue
     .line 42
@@ -535,7 +535,7 @@
 .end method
 
 .method static synthetic access$2500()Ljava/lang/String;
-    .registers 1
+    .locals 1
 
     .prologue
     .line 42
@@ -545,7 +545,7 @@
 .end method
 
 .method static synthetic access$2600()Ljava/lang/String;
-    .registers 1
+    .locals 1
 
     .prologue
     .line 42
@@ -555,7 +555,7 @@
 .end method
 
 .method static synthetic access$2700()Ljava/lang/String;
-    .registers 1
+    .locals 1
 
     .prologue
     .line 42
@@ -565,7 +565,7 @@
 .end method
 
 .method static synthetic access$2800()Ljava/lang/String;
-    .registers 1
+    .locals 1
 
     .prologue
     .line 42
@@ -575,7 +575,7 @@
 .end method
 
 .method static synthetic access$2900()Ljava/lang/String;
-    .registers 1
+    .locals 1
 
     .prologue
     .line 42
@@ -585,7 +585,7 @@
 .end method
 
 .method static synthetic access$300(Lcom/android/wubydax/NetworkTraffic;)J
-    .registers 3
+    .locals 2
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -596,7 +596,7 @@
 .end method
 
 .method static synthetic access$3000()Ljava/lang/String;
-    .registers 1
+    .locals 1
 
     .prologue
     .line 42
@@ -606,7 +606,7 @@
 .end method
 
 .method static synthetic access$302(Lcom/android/wubydax/NetworkTraffic;J)J
-    .registers 4
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
     .param p1, "x1"    # J
 
@@ -618,7 +618,7 @@
 .end method
 
 .method static synthetic access$3100()Ljava/lang/String;
-    .registers 1
+    .locals 1
 
     .prologue
     .line 42
@@ -628,7 +628,7 @@
 .end method
 
 .method static synthetic access$3200()Ljava/lang/String;
-    .registers 1
+    .locals 1
 
     .prologue
     .line 42
@@ -638,7 +638,7 @@
 .end method
 
 .method static synthetic access$3300()Ljava/lang/String;
-    .registers 1
+    .locals 1
 
     .prologue
     .line 42
@@ -648,7 +648,7 @@
 .end method
 
 .method static synthetic access$3400()Ljava/lang/String;
-    .registers 1
+    .locals 1
 
     .prologue
     .line 42
@@ -658,7 +658,7 @@
 .end method
 
 .method static synthetic access$400(Lcom/android/wubydax/NetworkTraffic;)J
-    .registers 3
+    .locals 2
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -669,7 +669,7 @@
 .end method
 
 .method static synthetic access$402(Lcom/android/wubydax/NetworkTraffic;J)J
-    .registers 4
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
     .param p1, "x1"    # J
 
@@ -681,7 +681,7 @@
 .end method
 
 .method static synthetic access$500(Lcom/android/wubydax/NetworkTraffic;)Z
-    .registers 2
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -694,7 +694,7 @@
 .end method
 
 .method static synthetic access$600(Lcom/android/wubydax/NetworkTraffic;)V
-    .registers 1
+    .locals 0
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -705,7 +705,7 @@
 .end method
 
 .method static synthetic access$700(Lcom/android/wubydax/NetworkTraffic;)I
-    .registers 2
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -716,7 +716,7 @@
 .end method
 
 .method static synthetic access$800(II)Z
-    .registers 3
+    .locals 1
     .param p0, "x0"    # I
     .param p1, "x1"    # I
 
@@ -730,7 +730,7 @@
 .end method
 
 .method static synthetic access$900(Lcom/android/wubydax/NetworkTraffic;)I
-    .registers 2
+    .locals 1
     .param p0, "x0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -741,7 +741,7 @@
 .end method
 
 .method private clearHandlerCallbacks()V
-    .registers 3
+    .locals 2
 
     .prologue
     .line 351
@@ -770,7 +770,7 @@
 .end method
 
 .method private getConnectAvailable()Z
-    .registers 5
+    .locals 4
 
     .prologue
     .line 245
@@ -787,7 +787,7 @@
 
     .line 247
     .local v0, "connManager":Landroid/net/ConnectivityManager;
-    if-eqz v0, :cond_1a
+    if-eqz v0, :cond_0
 
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
@@ -795,37 +795,37 @@
 
     .line 248
     .local v1, "network":Landroid/net/NetworkInfo;
-    :goto_10
-    if-eqz v1, :cond_1c
+    :goto_0
+    if-eqz v1, :cond_1
 
     invoke-virtual {v1}, Landroid/net/NetworkInfo;->isConnected()Z
 
     move-result v2
 
-    if-eqz v2, :cond_1c
+    if-eqz v2, :cond_1
 
     const/4 v2, 0x1
 
-    :goto_19
+    :goto_1
     return v2
 
     .line 247
     .end local v1    # "network":Landroid/net/NetworkInfo;
-    :cond_1a
+    :cond_0
     const/4 v1, 0x0
 
-    goto :goto_10
+    goto :goto_0
 
     .line 248
     .restart local v1    # "network":Landroid/net/NetworkInfo;
-    :cond_1c
+    :cond_1
     const/4 v2, 0x0
 
-    goto :goto_19
+    goto :goto_1
 .end method
 
 .method private static getInterval(I)I
-    .registers 3
+    .locals 2
     .param p0, "intState"    # I
 
     .prologue
@@ -836,25 +836,25 @@
     .local v0, "intInterval":I
     const/16 v1, 0xfa
 
-    if-lt v0, v1, :cond_b
+    if-lt v0, v1, :cond_0
 
     const/16 v1, 0x7fee
 
-    if-gt v0, v1, :cond_b
+    if-gt v0, v1, :cond_0
 
     .end local v0    # "intInterval":I
-    :goto_a
+    :goto_0
     return v0
 
     .restart local v0    # "intInterval":I
-    :cond_b
+    :cond_0
     const/16 v0, 0x3e8
 
-    goto :goto_a
+    goto :goto_0
 .end method
 
 .method private static isSet(II)Z
-    .registers 3
+    .locals 1
     .param p0, "intState"    # I
     .param p1, "intMask"    # I
 
@@ -862,21 +862,21 @@
     .line 211
     and-int v0, p0, p1
 
-    if-ne v0, p1, :cond_6
+    if-ne v0, p1, :cond_0
 
     const/4 v0, 0x1
 
-    :goto_5
+    :goto_0
     return v0
 
-    :cond_6
+    :cond_0
     const/4 v0, 0x0
 
-    goto :goto_5
+    goto :goto_0
 .end method
 
 .method private setUpStyle()V
-    .registers 3
+    .locals 2
 
     .prologue
     const/4 v1, 0x0
@@ -884,7 +884,7 @@
     .line 335
     iget v0, p0, Lcom/android/wubydax/NetworkTraffic;->mTextStyle:I
 
-    packed-switch v0, :pswitch_data_1a
+    packed-switch v0, :pswitch_data_0
 
     .line 346
     const/4 v0, 0x0
@@ -892,44 +892,44 @@
     invoke-virtual {p0, v1, v0}, Lcom/android/wubydax/NetworkTraffic;->setTypeface(Landroid/graphics/Typeface;I)V
 
     .line 348
-    :goto_a
+    :goto_0
     return-void
 
     .line 337
-    :pswitch_b
+    :pswitch_0
     const/4 v0, 0x1
 
     invoke-virtual {p0, v1, v0}, Lcom/android/wubydax/NetworkTraffic;->setTypeface(Landroid/graphics/Typeface;I)V
 
-    goto :goto_a
+    goto :goto_0
 
     .line 340
-    :pswitch_10
+    :pswitch_1
     const/4 v0, 0x2
 
     invoke-virtual {p0, v1, v0}, Lcom/android/wubydax/NetworkTraffic;->setTypeface(Landroid/graphics/Typeface;I)V
 
-    goto :goto_a
+    goto :goto_0
 
     .line 343
-    :pswitch_15
+    :pswitch_2
     const/4 v0, 0x3
 
     invoke-virtual {p0, v1, v0}, Lcom/android/wubydax/NetworkTraffic;->setTypeface(Landroid/graphics/Typeface;I)V
 
-    goto :goto_a
+    goto :goto_0
 
     .line 335
-    :pswitch_data_1a
+    :pswitch_data_0
     .packed-switch 0x1
-        :pswitch_b
-        :pswitch_10
-        :pswitch_15
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
     .end packed-switch
 .end method
 
 .method private updateSettings()V
-    .registers 15
+    .locals 14
 
     .prologue
     const/16 v13, 0xa
@@ -955,11 +955,11 @@
 
     move-result v9
 
-    if-ne v9, v10, :cond_13c
+    if-ne v9, v10, :cond_3
 
     move v9, v10
 
-    :goto_14
+    :goto_0
     iput-boolean v9, p0, Lcom/android/wubydax/NetworkTraffic;->mAutoHide:Z
 
     .line 258
@@ -969,11 +969,11 @@
 
     move-result v9
 
-    if-ne v9, v10, :cond_13f
+    if-ne v9, v10, :cond_4
 
     move v9, v10
 
-    :goto_1f
+    :goto_1
     iput-boolean v9, p0, Lcom/android/wubydax/NetworkTraffic;->mShowArrows:Z
 
     .line 261
@@ -992,11 +992,11 @@
 
     move-result v9
 
-    if-nez v9, :cond_142
+    if-nez v9, :cond_5
 
     move v9, v10
 
-    :goto_32
+    :goto_2
     iput-boolean v9, p0, Lcom/android/wubydax/NetworkTraffic;->mIsGlobalColor:Z
 
     .line 266
@@ -1024,24 +1024,24 @@
 
     move-result v9
 
-    if-ne v9, v10, :cond_145
+    if-ne v9, v10, :cond_6
 
     move v3, v10
 
     .line 272
     .local v3, "isBytes":Z
-    :goto_4d
+    :goto_3
     sget-object v9, Lcom/android/wubydax/NetworkTraffic;->NETWORK_TRAFFIC_ARROWS_POSITION:Ljava/lang/String;
 
     invoke-static {v4, v9, v11}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v9
 
-    if-ne v9, v10, :cond_148
+    if-ne v9, v10, :cond_7
 
     move v9, v10
 
-    :goto_56
+    :goto_4
     iput-boolean v9, p0, Lcom/android/wubydax/NetworkTraffic;->mIsToStart:Z
 
     .line 274
@@ -1056,21 +1056,21 @@
     .line 277
     iget-boolean v9, p0, Lcom/android/wubydax/NetworkTraffic;->mIsGlobalColor:Z
 
-    if-eqz v9, :cond_14b
+    if-eqz v9, :cond_8
 
     iget v9, p0, Lcom/android/wubydax/NetworkTraffic;->mNetworkTrafficColor:I
 
-    :goto_66
+    :goto_5
     iput v9, p0, Lcom/android/wubydax/NetworkTraffic;->mDownloadColor:I
 
     .line 279
     iget-boolean v9, p0, Lcom/android/wubydax/NetworkTraffic;->mIsGlobalColor:Z
 
-    if-eqz v9, :cond_153
+    if-eqz v9, :cond_9
 
     iget v9, p0, Lcom/android/wubydax/NetworkTraffic;->mNetworkTrafficColor:I
 
-    :goto_6e
+    :goto_6
     iput v9, p0, Lcom/android/wubydax/NetworkTraffic;->mUploadColor:I
 
     .line 281
@@ -1108,7 +1108,7 @@
     .line 288
     iget-boolean v9, p0, Lcom/android/wubydax/NetworkTraffic;->mIsGlobalColor:Z
 
-    if-eqz v9, :cond_95
+    if-eqz v9, :cond_0
 
     .line 289
     iget v9, p0, Lcom/android/wubydax/NetworkTraffic;->mNetworkTrafficColor:I
@@ -1116,7 +1116,7 @@
     invoke-virtual {p0, v9}, Lcom/android/wubydax/NetworkTraffic;->setTextColor(I)V
 
     .line 292
-    :cond_95
+    :cond_0
     invoke-direct {p0}, Lcom/android/wubydax/NetworkTraffic;->updateTrafficDrawable()V
 
     .line 294
@@ -1128,7 +1128,7 @@
 
     move-result v9
 
-    if-eqz v9, :cond_f9
+    if-eqz v9, :cond_1
 
     .line 295
     invoke-virtual {p0}, Lcom/android/wubydax/NetworkTraffic;->getText()Ljava/lang/CharSequence;
@@ -1139,7 +1139,7 @@
 
     move-result v9
 
-    if-nez v9, :cond_f9
+    if-nez v9, :cond_1
 
     .line 296
     invoke-virtual {p0}, Lcom/android/wubydax/NetworkTraffic;->getText()Ljava/lang/CharSequence;
@@ -1160,7 +1160,7 @@
     .local v0, "data":[Ljava/lang/String;
     array-length v9, v0
 
-    if-le v9, v10, :cond_f9
+    if-le v9, v10, :cond_1
 
     .line 298
     aget-object v7, v0, v11
@@ -1237,8 +1237,8 @@
     .end local v6    # "spannableStringBuilder":Landroid/text/SpannableStringBuilder;
     .end local v7    # "upload":Ljava/lang/String;
     .end local v8    # "uploadColored":Landroid/text/SpannableString;
-    :cond_f9
-    if-eqz v3, :cond_15b
+    :cond_1
+    if-eqz v3, :cond_a
 
     .line 312
     const/16 v9, 0x400
@@ -1246,7 +1246,7 @@
     iput v9, p0, Lcom/android/wubydax/NetworkTraffic;->KB:I
 
     .line 316
-    :goto_ff
+    :goto_7
     iget v9, p0, Lcom/android/wubydax/NetworkTraffic;->KB:I
 
     iget v12, p0, Lcom/android/wubydax/NetworkTraffic;->KB:I
@@ -1271,7 +1271,7 @@
 
     move-result v9
 
-    if-nez v9, :cond_11e
+    if-nez v9, :cond_2
 
     iget v9, p0, Lcom/android/wubydax/NetworkTraffic;->mState:I
 
@@ -1281,15 +1281,15 @@
 
     move-result v9
 
-    if-eqz v9, :cond_160
+    if-eqz v9, :cond_b
 
     .line 320
-    :cond_11e
+    :cond_2
     invoke-direct {p0}, Lcom/android/wubydax/NetworkTraffic;->getConnectAvailable()Z
 
     move-result v9
 
-    if-eqz v9, :cond_163
+    if-eqz v9, :cond_c
 
     .line 321
     invoke-static {}, Landroid/net/TrafficStats;->getTotalRxBytes()J
@@ -1317,86 +1317,86 @@
     invoke-direct {p0}, Lcom/android/wubydax/NetworkTraffic;->updateTrafficDrawable()V
 
     .line 332
-    :goto_13b
+    :goto_8
     return-void
 
     .end local v3    # "isBytes":Z
     .end local v5    # "scale":F
-    :cond_13c
+    :cond_3
     move v9, v11
 
     .line 255
-    goto/16 :goto_14
+    goto/16 :goto_0
 
-    :cond_13f
+    :cond_4
     move v9, v11
 
     .line 258
-    goto/16 :goto_1f
+    goto/16 :goto_1
 
-    :cond_142
+    :cond_5
     move v9, v11
 
     .line 264
-    goto/16 :goto_32
+    goto/16 :goto_2
 
-    :cond_145
+    :cond_6
     move v3, v11
 
     .line 270
-    goto/16 :goto_4d
+    goto/16 :goto_3
 
     .restart local v3    # "isBytes":Z
-    :cond_148
+    :cond_7
     move v9, v11
 
     .line 272
-    goto/16 :goto_56
+    goto/16 :goto_4
 
     .line 277
-    :cond_14b
+    :cond_8
     sget-object v9, Lcom/android/wubydax/NetworkTraffic;->NETWORK_TRAFFIC_DOWNLOAD_COLOR:Ljava/lang/String;
 
     invoke-static {v4, v9, v12}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v9
 
-    goto/16 :goto_66
+    goto/16 :goto_5
 
     .line 279
-    :cond_153
+    :cond_9
     sget-object v9, Lcom/android/wubydax/NetworkTraffic;->NETWORK_TRAFFIC_UPLOAD_COLOR:Ljava/lang/String;
 
     invoke-static {v4, v9, v12}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v9
 
-    goto/16 :goto_6e
+    goto/16 :goto_6
 
     .line 314
     .restart local v5    # "scale":F
-    :cond_15b
+    :cond_a
     const/16 v9, 0x3e8
 
     iput v9, p0, Lcom/android/wubydax/NetworkTraffic;->KB:I
 
-    goto :goto_ff
+    goto :goto_7
 
     .line 329
-    :cond_160
+    :cond_b
     invoke-direct {p0}, Lcom/android/wubydax/NetworkTraffic;->clearHandlerCallbacks()V
 
     .line 331
-    :cond_163
+    :cond_c
     const/16 v9, 0x8
 
     invoke-virtual {p0, v9}, Lcom/android/wubydax/NetworkTraffic;->setVisibility(I)V
 
-    goto :goto_13b
+    goto :goto_8
 .end method
 
 .method private updateTrafficDrawable()V
-    .registers 8
+    .locals 7
 
     .prologue
     const/4 v6, 0x0
@@ -1404,7 +1404,7 @@
     .line 359
     iget-boolean v2, p0, Lcom/android/wubydax/NetworkTraffic;->mShowArrows:Z
 
-    if-eqz v2, :cond_8a
+    if-eqz v2, :cond_6
 
     .line 361
     iget v2, p0, Lcom/android/wubydax/NetworkTraffic;->mState:I
@@ -1415,7 +1415,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_45
+    if-eqz v2, :cond_1
 
     .line 362
     iget-object v2, p0, Lcom/android/wubydax/NetworkTraffic;->mContext:Landroid/content/Context;
@@ -1440,8 +1440,8 @@
 
     .line 370
     .local v1, "intTrafficDrawable":I
-    :goto_22
-    if-eqz v1, :cond_44
+    :goto_0
+    if-eqz v1, :cond_0
 
     .line 371
     invoke-virtual {p0}, Lcom/android/wubydax/NetworkTraffic;->getContext()Landroid/content/Context;
@@ -1458,16 +1458,16 @@
 
     .line 372
     .local v0, "drw":Landroid/graphics/drawable/Drawable;
-    if-eqz v0, :cond_44
+    if-eqz v0, :cond_0
 
     .line 373
     iget-boolean v2, p0, Lcom/android/wubydax/NetworkTraffic;->mIsGlobalColor:Z
 
-    if-eqz v2, :cond_83
+    if-eqz v2, :cond_4
 
     iget v2, p0, Lcom/android/wubydax/NetworkTraffic;->mNetworkTrafficColor:I
 
-    :goto_38
+    :goto_1
     sget-object v3, Landroid/graphics/PorterDuff$Mode;->SRC_ATOP:Landroid/graphics/PorterDuff$Mode;
 
     invoke-virtual {v0, v2, v3}, Landroid/graphics/drawable/Drawable;->setColorFilter(ILandroid/graphics/PorterDuff$Mode;)V
@@ -1475,7 +1475,7 @@
     .line 374
     iget-boolean v2, p0, Lcom/android/wubydax/NetworkTraffic;->mIsToStart:Z
 
-    if-eqz v2, :cond_86
+    if-eqz v2, :cond_5
 
     .line 375
     invoke-virtual {p0, v0, v6, v6, v6}, Lcom/android/wubydax/NetworkTraffic;->setCompoundDrawablesRelativeWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
@@ -1483,12 +1483,12 @@
     .line 384
     .end local v0    # "drw":Landroid/graphics/drawable/Drawable;
     .end local v1    # "intTrafficDrawable":I
-    :cond_44
-    :goto_44
+    :cond_0
+    :goto_2
     return-void
 
     .line 363
-    :cond_45
+    :cond_1
     iget v2, p0, Lcom/android/wubydax/NetworkTraffic;->mState:I
 
     const/4 v3, 0x1
@@ -1497,7 +1497,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_63
+    if-eqz v2, :cond_2
 
     .line 364
     iget-object v2, p0, Lcom/android/wubydax/NetworkTraffic;->mContext:Landroid/content/Context;
@@ -1521,11 +1521,11 @@
     move-result v1
 
     .restart local v1    # "intTrafficDrawable":I
-    goto :goto_22
+    goto :goto_0
 
     .line 365
     .end local v1    # "intTrafficDrawable":I
-    :cond_63
+    :cond_2
     iget v2, p0, Lcom/android/wubydax/NetworkTraffic;->mState:I
 
     const/4 v3, 0x2
@@ -1534,7 +1534,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_81
+    if-eqz v2, :cond_3
 
     .line 366
     iget-object v2, p0, Lcom/android/wubydax/NetworkTraffic;->mContext:Landroid/content/Context;
@@ -1558,49 +1558,49 @@
     move-result v1
 
     .restart local v1    # "intTrafficDrawable":I
-    goto :goto_22
+    goto :goto_0
 
     .line 368
     .end local v1    # "intTrafficDrawable":I
-    :cond_81
+    :cond_3
     const/4 v1, 0x0
 
     .restart local v1    # "intTrafficDrawable":I
-    goto :goto_22
+    goto :goto_0
 
     .line 373
     .restart local v0    # "drw":Landroid/graphics/drawable/Drawable;
-    :cond_83
+    :cond_4
     iget v2, p0, Lcom/android/wubydax/NetworkTraffic;->mNetworkTrafficArrowColor:I
 
-    goto :goto_38
+    goto :goto_1
 
     .line 377
-    :cond_86
+    :cond_5
     invoke-virtual {p0, v6, v6, v0, v6}, Lcom/android/wubydax/NetworkTraffic;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    goto :goto_44
+    goto :goto_2
 
     .line 382
     .end local v0    # "drw":Landroid/graphics/drawable/Drawable;
     .end local v1    # "intTrafficDrawable":I
-    :cond_8a
+    :cond_6
     invoke-virtual {p0, v6, v6, v6, v6}, Lcom/android/wubydax/NetworkTraffic;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    goto :goto_44
+    goto :goto_2
 .end method
 
 
 # virtual methods
 .method protected onAttachedToWindow()V
-    .registers 7
+    .locals 6
 
     .prologue
     .line 221
     invoke-super {p0}, Landroid/widget/TextView;->onAttachedToWindow()V
 
     .line 223
-    :try_start_3
+    :try_start_0
     iget-object v2, p0, Lcom/android/wubydax/NetworkTraffic;->mSettingsObserver:Lcom/android/wubydax/NetworkTraffic$SettingsObserver;
 
     invoke-virtual {v2}, Lcom/android/wubydax/NetworkTraffic$SettingsObserver;->observe()V
@@ -1628,16 +1628,16 @@
     move-result-object v5
 
     invoke-virtual {v2, v3, v1, v4, v5}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
-    :try_end_1e
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_1e} :catch_1f
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 231
     .end local v1    # "filter":Landroid/content/IntentFilter;
-    :goto_1e
+    :goto_0
     return-void
 
     .line 227
-    :catch_1f
+    :catch_0
     move-exception v0
 
     .line 228
@@ -1648,18 +1648,18 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_1e
+    goto :goto_0
 .end method
 
 .method protected onDetachedFromWindow()V
-    .registers 4
+    .locals 3
 
     .prologue
     .line 235
     invoke-super {p0}, Landroid/widget/TextView;->onDetachedFromWindow()V
 
     .line 237
-    :try_start_3
+    :try_start_0
     iget-object v1, p0, Lcom/android/wubydax/NetworkTraffic;->mSettingsObserver:Lcom/android/wubydax/NetworkTraffic$SettingsObserver;
 
     invoke-virtual {v1}, Lcom/android/wubydax/NetworkTraffic$SettingsObserver;->unObserve()V
@@ -1670,15 +1670,15 @@
     iget-object v2, p0, Lcom/android/wubydax/NetworkTraffic;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
-    :try_end_f
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_f} :catch_10
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 242
-    :goto_f
+    :goto_0
     return-void
 
     .line 239
-    :catch_10
+    :catch_0
     move-exception v0
 
     .line 240
@@ -1689,5 +1689,5 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_f
+    goto :goto_0
 .end method

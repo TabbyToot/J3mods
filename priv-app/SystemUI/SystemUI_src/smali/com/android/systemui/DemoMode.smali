@@ -18,11 +18,7 @@
 
 .field public static final COMMAND_NETWORK:Ljava/lang/String; = "network"
 
-.field public static final COMMAND_NOTIFICATIONS:Ljava/lang/String; = "notifications"
-
 .field public static final COMMAND_STATUS:Ljava/lang/String; = "status"
-
-.field public static final COMMAND_VOLUME:Ljava/lang/String; = "volume"
 
 
 # virtual methods

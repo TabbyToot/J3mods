@@ -881,4 +881,6 @@
     <item type="id" name="off">false</item>
     <item type="id" name="recent_remove_item">false</item>
     <item type="id" name="recent_inspect_item">false</item>
+    <item type="id" name="battery_stock">false</item>
+    <item type="id" name="circle_battery">false</item>
 </resources>

@@ -187,6 +187,7 @@
     return-object v0
 .end method
 
+
 # virtual methods
 .method public getComponent(Ljava/lang/Class;)Ljava/lang/Object;
     .locals 1
@@ -327,7 +328,7 @@
     const v1, 0x7f110040
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/SystemUIApplication;->setTheme(I)V
-    
+
     sput-object p0, Lcom/android/systemui/SystemUIApplication;->mGearContext:Landroid/content/Context;
 
     .line 84

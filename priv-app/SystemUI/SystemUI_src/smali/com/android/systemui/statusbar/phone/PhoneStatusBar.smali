@@ -21,6 +21,7 @@
         Lcom/android/systemui/statusbar/phone/PhoneStatusBar$ShadeUpdates;,
         Lcom/android/systemui/statusbar/phone/PhoneStatusBar$FastColorDrawable;,
         Lcom/android/systemui/statusbar/phone/PhoneStatusBar$MyTicker;,
+        Lcom/android/systemui/statusbar/phone/PhoneStatusBar$BatterySettingsObserver;,
         Lcom/android/systemui/statusbar/phone/PhoneStatusBar$H;,
         Lcom/android/systemui/statusbar/phone/PhoneStatusBar$EmergencyModeObserver;,
         Lcom/android/systemui/statusbar/phone/PhoneStatusBar$KidsModeObserver;
@@ -183,6 +184,8 @@
 
 .field private mBasicSettingsButtonListener:Landroid/view/View$OnClickListener;
 
+.field private mBattery:Lcom/android/systemui/BatteryMeterViewMod;
+
 .field mBatteryController:Lcom/android/systemui/statusbar/policy/BatteryController;
 
 .field private mBatteryLevel:I
@@ -224,6 +227,8 @@
 .field mCastController:Lcom/android/systemui/statusbar/policy/CastControllerImpl;
 
 .field private final mCheckBarModes:Ljava/lang/Runnable;
+
+.field private mCircleBattery:Lcom/android/systemui/BatteryCircleMeterView;
 
 .field private mClearAll:Landroid/view/View;
 
@@ -3611,6 +3616,14 @@
     .prologue
     .line 288
     invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->clearAllNotifications()V
+
+    return-void
+.end method
+
+.method static synthetic access$77000(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->updateBatteryIcons()V
 
     return-void
 .end method
@@ -9132,6 +9145,36 @@
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mAutohideSuspended:Z
 
     .line 4990
+    return-void
+.end method
+
+.method private updateBatteryIcons()V
+    .locals 2
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 723
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mBattery:Lcom/android/systemui/BatteryMeterViewMod;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mCircleBattery:Lcom/android/systemui/BatteryCircleMeterView;
+
+    if-eqz v0, :cond_0
+
+    .line 724
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mBattery:Lcom/android/systemui/BatteryMeterViewMod;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/BatteryMeterViewMod;->updateSettings(Z)V
+
+    .line 725
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mCircleBattery:Lcom/android/systemui/BatteryCircleMeterView;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/BatteryCircleMeterView;->updateSettings(Z)V
+
+    .line 727
+    :cond_0
     return-void
 .end method
 
@@ -24418,6 +24461,38 @@
 
     invoke-virtual {v10, v2, v13}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mStatusBarView:Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
+
+    const v2, 0x7f0f038c
+
+    invoke-virtual {v1, v2}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/systemui/BatteryMeterViewMod;
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mBattery:Lcom/android/systemui/BatteryMeterViewMod;
+
+    iget-object v1, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mStatusBarView:Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
+
+    const v2, 0x7f0f038d
+
+    invoke-virtual {v1, v2}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/systemui/BatteryCircleMeterView;
+
+    move-object/from16 v0, p0
+
+    iput-object v1, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mCircleBattery:Lcom/android/systemui/BatteryCircleMeterView;
+
+    invoke-direct/range {p0 .. p0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->updateBatteryIcons()V
+
     .line 1893
     invoke-direct/range {p0 .. p0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->resetUserSetupObserver()V
 
@@ -33843,6 +33918,14 @@
     invoke-direct {v0, v1}, Lcom/android/systemui/statusbar/phone/VoWiFiStatusController;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mVowifiController:Lcom/android/systemui/statusbar/phone/VoWiFiStatusController;
+
+    new-instance v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$BatterySettingsObserver;
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mHandler:Lcom/android/systemui/statusbar/BaseStatusBar$H;
+
+    invoke-direct {v0, p0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$BatterySettingsObserver;-><init>(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Landroid/os/Handler;)V
+
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$BatterySettingsObserver;->observe()V
 
     .line 1141
     new-instance v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;

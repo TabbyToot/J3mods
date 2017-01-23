@@ -20,7 +20,7 @@
 
 # direct methods
 .method constructor <init>(Lcom/android/wubydax/NetworkTraffic;)V
-    .registers 2
+    .locals 0
     .param p1, "this$0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -33,7 +33,7 @@
 .end method
 
 .method private formatOutput(JJLjava/lang/String;)Ljava/lang/String;
-    .registers 13
+    .locals 7
     .param p1, "timeDelta"    # J
     .param p3, "data"    # J
     .param p5, "symbol"    # Ljava/lang/String;
@@ -65,7 +65,7 @@
 
     cmp-long v2, v0, v2
 
-    if-gez v2, :cond_2c
+    if-gez v2, :cond_0
 
     .line 166
     new-instance v2, Ljava/lang/StringBuilder;
@@ -94,11 +94,11 @@
     move-result-object v2
 
     .line 172
-    :goto_2b
+    :goto_0
     return-object v2
 
     .line 167
-    :cond_2c
+    :cond_0
     iget-object v2, p0, Lcom/android/wubydax/NetworkTraffic$1;->this$0:Lcom/android/wubydax/NetworkTraffic;
 
     # getter for: Lcom/android/wubydax/NetworkTraffic;->MB:I
@@ -110,7 +110,7 @@
 
     cmp-long v2, v0, v2
 
-    if-gez v2, :cond_61
+    if-gez v2, :cond_1
 
     .line 168
     new-instance v2, Ljava/lang/StringBuilder;
@@ -159,10 +159,10 @@
 
     move-result-object v2
 
-    goto :goto_2b
+    goto :goto_0
 
     .line 169
-    :cond_61
+    :cond_1
     iget-object v2, p0, Lcom/android/wubydax/NetworkTraffic$1;->this$0:Lcom/android/wubydax/NetworkTraffic;
 
     # getter for: Lcom/android/wubydax/NetworkTraffic;->GB:I
@@ -174,7 +174,7 @@
 
     cmp-long v2, v0, v2
 
-    if-gez v2, :cond_96
+    if-gez v2, :cond_2
 
     .line 170
     new-instance v2, Ljava/lang/StringBuilder;
@@ -223,10 +223,10 @@
 
     move-result-object v2
 
-    goto :goto_2b
+    goto :goto_0
 
     .line 172
-    :cond_96
+    :cond_2
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -273,11 +273,11 @@
 
     move-result-object v2
 
-    goto/16 :goto_2b
+    goto/16 :goto_0
 .end method
 
 .method private shouldHide(JJ)Z
-    .registers 12
+    .locals 7
     .param p1, "rxData"    # J
     .param p3, "timeDelta"    # J
 
@@ -308,7 +308,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_20
+    if-eqz v2, :cond_0
 
     iget-object v2, p0, Lcom/android/wubydax/NetworkTraffic$1;->this$0:Lcom/android/wubydax/NetworkTraffic;
 
@@ -321,23 +321,23 @@
 
     cmp-long v2, v0, v2
 
-    if-gtz v2, :cond_20
+    if-gtz v2, :cond_0
 
     const/4 v2, 0x1
 
-    :goto_1f
+    :goto_0
     return v2
 
-    :cond_20
+    :cond_0
     const/4 v2, 0x0
 
-    goto :goto_1f
+    goto :goto_0
 .end method
 
 
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
-    .registers 30
+    .locals 28
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
@@ -385,7 +385,7 @@
 
     cmpg-double v3, v10, v24
 
-    if-gez v3, :cond_3c
+    if-gez v3, :cond_1
 
     .line 88
     move-object/from16 v0, p1
@@ -394,25 +394,25 @@
 
     const/4 v9, 0x1
 
-    if-eq v3, v9, :cond_31
+    if-eq v3, v9, :cond_0
 
     .line 161
-    :goto_30
+    :goto_0
     return-void
 
     .line 92
-    :cond_31
+    :cond_0
     const-wide/16 v10, 0x1
 
     cmp-long v3, v4, v10
 
-    if-gez v3, :cond_3c
+    if-gez v3, :cond_1
 
     .line 94
     const-wide v4, 0x7fffffffffffffffL
 
     .line 97
-    :cond_3c
+    :cond_1
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/wubydax/NetworkTraffic$1;->this$0:Lcom/android/wubydax/NetworkTraffic;
@@ -469,7 +469,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_b8
+    if-eqz v3, :cond_2
 
     .line 106
     move-object/from16 v0, p0
@@ -490,7 +490,7 @@
     invoke-virtual {v3, v9}, Lcom/android/wubydax/NetworkTraffic;->setVisibility(I)V
 
     .line 157
-    :goto_7d
+    :goto_1
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/wubydax/NetworkTraffic$1;->this$0:Lcom/android/wubydax/NetworkTraffic;
@@ -555,10 +555,10 @@
 
     invoke-virtual {v3, v9, v10, v11}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    goto/16 :goto_30
+    goto/16 :goto_0
 
     .line 108
-    :cond_b8
+    :cond_2
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/wubydax/NetworkTraffic$1;->this$0:Lcom/android/wubydax/NetworkTraffic;
@@ -568,7 +568,7 @@
 
     move-result v3
 
-    if-nez v3, :cond_d3
+    if-nez v3, :cond_3
 
     .line 109
     move-object/from16 v0, p0
@@ -587,10 +587,10 @@
 
     invoke-virtual {v3, v9}, Lcom/android/wubydax/NetworkTraffic;->setVisibility(I)V
 
-    goto :goto_7d
+    goto :goto_1
 
     .line 114
-    :cond_d3
+    :cond_3
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/wubydax/NetworkTraffic$1;->this$0:Lcom/android/wubydax/NetworkTraffic;
@@ -602,14 +602,14 @@
 
     const/16 v9, 0x400
 
-    if-ne v3, v9, :cond_1a8
+    if-ne v3, v9, :cond_7
 
     .line 115
     const-string v8, "B/s"
 
     .line 123
     .local v8, "symbol":Ljava/lang/String;
-    :goto_e1
+    :goto_2
     new-instance v20, Landroid/text/SpannableStringBuilder;
 
     invoke-direct/range {v20 .. v20}, Landroid/text/SpannableStringBuilder;-><init>()V
@@ -632,7 +632,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_121
+    if-eqz v3, :cond_4
 
     move-object/from16 v3, p0
 
@@ -686,7 +686,7 @@
     .line 133
     .end local v15    # "maskUp":Ljava/lang/String;
     .end local v22    # "spannableUp":Landroid/text/SpannableString;
-    :cond_121
+    :cond_4
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/wubydax/NetworkTraffic$1;->this$0:Lcom/android/wubydax/NetworkTraffic;
@@ -703,7 +703,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_1b2
+    if-eqz v3, :cond_8
 
     .line 134
     const-string v3, "\n"
@@ -724,7 +724,7 @@
 
     .line 141
     .local v23, "textSize":I
-    :goto_13f
+    :goto_3
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/wubydax/NetworkTraffic$1;->this$0:Lcom/android/wubydax/NetworkTraffic;
@@ -741,7 +741,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_178
+    if-eqz v3, :cond_5
 
     move-object/from16 v9, p0
 
@@ -795,7 +795,7 @@
     .line 149
     .end local v2    # "maskDown":Ljava/lang/String;
     .end local v21    # "spannableDown":Landroid/text/SpannableString;
-    :cond_178
+    :cond_5
     invoke-virtual/range {v20 .. v20}, Landroid/text/SpannableStringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
@@ -812,7 +812,7 @@
 
     move-result v3
 
-    if-nez v3, :cond_19e
+    if-nez v3, :cond_6
 
     .line 150
     move-object/from16 v0, p0
@@ -837,7 +837,7 @@
     invoke-virtual {v3, v0}, Lcom/android/wubydax/NetworkTraffic;->setText(Ljava/lang/CharSequence;)V
 
     .line 153
-    :cond_19e
+    :cond_6
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/wubydax/NetworkTraffic$1;->this$0:Lcom/android/wubydax/NetworkTraffic;
@@ -846,13 +846,13 @@
 
     invoke-virtual {v3, v9}, Lcom/android/wubydax/NetworkTraffic;->setVisibility(I)V
 
-    goto/16 :goto_7d
+    goto/16 :goto_1
 
     .line 117
     .end local v8    # "symbol":Ljava/lang/String;
     .end local v20    # "output":Landroid/text/SpannableStringBuilder;
     .end local v23    # "textSize":I
-    :cond_1a8
+    :cond_7
     const-string v8, "b/s"
 
     .line 118
@@ -866,11 +866,11 @@
 
     mul-long/2addr v6, v10
 
-    goto/16 :goto_e1
+    goto/16 :goto_2
 
     .line 137
     .restart local v20    # "output":Landroid/text/SpannableStringBuilder;
-    :cond_1b2
+    :cond_8
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/wubydax/NetworkTraffic$1;->this$0:Lcom/android/wubydax/NetworkTraffic;
@@ -881,5 +881,5 @@
     move-result v23
 
     .restart local v23    # "textSize":I
-    goto :goto_13f
+    goto :goto_3
 .end method

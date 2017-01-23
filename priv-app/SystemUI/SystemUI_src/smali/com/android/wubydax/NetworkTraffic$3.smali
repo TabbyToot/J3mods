@@ -20,7 +20,7 @@
 
 # direct methods
 .method constructor <init>(Lcom/android/wubydax/NetworkTraffic;)V
-    .registers 2
+    .locals 0
     .param p1, "this$0"    # Lcom/android/wubydax/NetworkTraffic;
 
     .prologue
@@ -35,7 +35,7 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .registers 5
+    .locals 2
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "intent"    # Landroid/content/Intent;
 
@@ -47,7 +47,7 @@
 
     .line 190
     .local v0, "action":Ljava/lang/String;
-    if-eqz v0, :cond_13
+    if-eqz v0, :cond_0
 
     const-string v1, "android.net.conn.CONNECTIVITY_CHANGE"
 
@@ -55,7 +55,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_13
+    if-eqz v1, :cond_0
 
     .line 191
     iget-object v1, p0, Lcom/android/wubydax/NetworkTraffic$3;->this$0:Lcom/android/wubydax/NetworkTraffic;
@@ -64,6 +64,6 @@
     invoke-static {v1}, Lcom/android/wubydax/NetworkTraffic;->access$2000(Lcom/android/wubydax/NetworkTraffic;)V
 
     .line 193
-    :cond_13
+    :cond_0
     return-void
 .end method

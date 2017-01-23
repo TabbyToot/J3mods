@@ -15,6 +15,8 @@
 
 
 # static fields
+.field public static final BatteryIcon:[I
+
 .field public static final BatteryMeterView:[I
 
 .field public static final BatteryMeterView_frameColor:I = 0x0
@@ -232,6 +234,14 @@
 
     new-array v0, v3, [I
 
+    const v1, 0x7f01003c
+
+    aput v1, v0, v2
+
+    sput-object v0, Lcom/android/systemui/R$styleable;->BatteryIcon:[I
+
+    new-array v0, v3, [I
+
     const v1, 0x7f010025
 
     aput v1, v0, v2
@@ -373,6 +383,8 @@
     sput-object v0, Lcom/android/systemui/R$styleable;->UserDetailItemView:[I
 
     return-void
+
+    nop
 
     :array_0
     .array-data 4

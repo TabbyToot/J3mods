@@ -297,6 +297,39 @@
         <item>23</item>
         <item>999</item>
     </string-array>
-
+ <string name="battery_icon_title">Battery style</string>
+    <string name="battery_status_icon">Icon</string>
+    <string name="battery_status_percentage">Percentage</string>
+    <string name="battery_status_icon_percentage">Icon with percentage</string>
+    <string name="battery_status_circle">Circle</string>
+    <string name="battery_status_circle_percentage">Circle with percentage</string>
+    <string name="battery_status_dotted_circle_percentage">Dotted Circle with percentage</string>
+    <string name="battery_status_dotted_circle">Dotted Circle</string>
+    <string name="battery_color_title">Battery color</string>
+    <string name="circle_battery_animation_speed">Circle animation speed</string>
+    <string name="circle_battery_animation_speed_none">None</string>
+    <string name="circle_battery_animation_speed_slow">Slow</string>
+    <string name="circle_battery_animation_speed_stock">Normal</string>
+    <string name="circle_battery_animation_speed_fast">Fast</string>
+    <string name="battery_text_color">Percentage text color</string>
+    <string name="battery_bolt_color">Bolt charging color</string>
+    <string name="battery_text_charging_color">Percentage text charging color</string>
+    <string name="battery_style_reset_message">Reset all battery colors?</string>
+    <string name="battery_status_icon_percentage_jb">Icon with percentage (JB style)</string>
+    <string name="battery_status_gone">No battery</string>
+    <string name="battery_circle_charging_color">Circle charging color</string>
+    <string name="attention">Attention</string>
+    <string name="status_bar_show_battery_status_title">Show battery status</string>
+    <string name="status_bar_show_battery_status_summary">Enable to show the battery status in the status bar</string>
+    <string name="battery_status_style_title">Icon/text</string>
+    <string name="battery_status_show_text_title">Show battery status text</string>
+    <string name="battery_status_show_text_summary">Activate, to show the battery status text</string>
+    <string name="battery_status_custom_frame_color_title">Custom frame color</string>
+    <string name="battery_status_custom_frame_color_summary">If disabled, the battery status color with a transparency of 80% will be used.</string>
+    <string name="battery_status_circle_dotted_title">Circle dotted</string>
+    <string name="battery_status_circle_dotted_summary">Activate, to show the battery circle dotted</string>
+    <string name="battery_status_color">Battery status color</string>
+    <string name="battery_frame_color">Battery frame color</string>
+    <string name="default_battery_color">Default</string>
     <!--These strings are to set the default fragment to open for the first time the app launches-->
 </resources>

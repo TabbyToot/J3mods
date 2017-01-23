@@ -20,7 +20,7 @@
 
 # direct methods
 .method constructor <init>(Lcom/android/wubydax/NetworkTraffic;Landroid/os/Handler;)V
-    .registers 3
+    .locals 0
     .param p1, "this$0"    # Lcom/android/wubydax/NetworkTraffic;
     .param p2, "handler"    # Landroid/os/Handler;
 
@@ -38,7 +38,7 @@
 
 # virtual methods
 .method observe()V
-    .registers 5
+    .locals 4
 
     .prologue
     const/4 v3, 0x0
@@ -231,7 +231,7 @@
 .end method
 
 .method public onChange(Z)V
-    .registers 3
+    .locals 1
     .param p1, "selfChange"    # Z
 
     .prologue
@@ -246,7 +246,7 @@
 .end method
 
 .method unObserve()V
-    .registers 2
+    .locals 1
 
     .prologue
     .line 451

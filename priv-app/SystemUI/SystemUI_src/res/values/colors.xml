@@ -185,4 +185,8 @@
     <color name="app_locked_background_color">#fffafafa</color>
     <color name="app_locked_text_color">#ff999999</color>
     <color name="screen_pinning_primary_text">@android:color/primary_text_default_material_light</color>
+    <color name="batterymeter_critical">#ffff3300</color>
+    <color name="batterymeter_low">#ffff3300</color>
+    <color name="batterymeter_full">#ffffffff</color>
+    <color name="statusbar_clock_color">#ffffffff</color>
 </resources>
