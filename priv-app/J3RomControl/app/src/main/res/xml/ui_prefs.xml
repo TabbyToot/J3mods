@@ -466,4 +466,10 @@
                 android:dependency="network_traffic_global_color"/>
         </PreferenceCategory>
 	</PreferenceScreen>
+	<PreferenceScreen android:title="@string/dynamic_status_bar_title">
+    <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="@string/dynamic_status_bar_color_title" android:key="dynamic_status_bar_color_state" android:summary="@string/dynamic_status_bar_color_summary" android:defaultValue="0" />
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference  android:entries="@array/dsb_gradient_filter_entries" android:title="@string/dynamic_status_bar_gradient_title" android:key="dynamic_status_bar_gradient_state" android:summary="@string/dynamic_status_bar_gradient_summary" android:defaultValue="0" android:entryValues="@array/dsb_gradient_filter_values" />
+   <com.wubydax.romcontrol.v2.prefs.MyListPreference  android:entries="@array/dsb_gradient_filter_entries" android:title="@string/dynamic_status_bar_filter_title" android:key="dynamic_status_bar_filter_state" android:summary="@string/dynamic_status_bar_filter_summary" android:defaultValue="0" android:entryValues="@array/dsb_gradient_filter_values" />
+    <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference  android:persistent="false" android:title="@string/dynamic_status_bar_filter_value" android:key="dynamic_status_bar_filter_value" />
+   </PreferenceScreen>
 </PreferenceScreen>

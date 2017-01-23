@@ -883,4 +883,8 @@
     <item type="id" name="recent_inspect_item">false</item>
     <item type="id" name="battery_stock">false</item>
     <item type="id" name="circle_battery">false</item>
+    <item type="id" name="dynamic_status_bar_color">false</item>
+    <item type="id" name="dynamic_status_bar_filter">false</item>
+    <item type="id" name="dynamic_status_bar_gradient">false</item>
+    <item type="id" name="dynamic_status_bar">false</item>
 </resources>

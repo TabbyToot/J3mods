@@ -331,5 +331,17 @@
     <string name="battery_status_color">Battery status color</string>
     <string name="battery_frame_color">Battery frame color</string>
     <string name="default_battery_color">Default</string>
+	<string name="dynamic_status_bar_title">Dynamic status bar</string>
+    <string name="dynamic_status_bar_color_title">Dynamic status bar color</string>
+    <string name="dynamic_status_bar_color_summary">Automatically update background color of the status bar</string>
+    <string name="dynamic_status_bar_gradient_title">Gradient</string>
+    <string name="dynamic_status_bar_gradient_summary">Overlay a gradient on the status bar</string>
+    <string name="dynamic_status_bar_filter_title">Darkening</string>
+    <string name="dynamic_status_bar_filter_summary">Overlay a darkening filter on the status bar</string>
+    <string name="dsb_gradient_filter_value_0">Off</string>
+    <string name="dsb_gradient_filter_value_1">Only on the desktop</string>
+    <string name="dsb_gradient_filter_value_2">Everywhere except the desktop</string>
+    <string name="dsb_gradient_filter_value_3">On</string>
+    <string name="dynamic_status_bar_filter_value">The intensity of the darkening filter</string>
     <!--These strings are to set the default fragment to open for the first time the app launches-->
 </resources>
